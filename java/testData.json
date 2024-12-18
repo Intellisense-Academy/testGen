@@ -1,0 +1,78 @@
+[
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='username']",
+		"value" : "riyaz@rabiyat.fusion"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='password']",
+		"value" : "fusion123"
+	},
+	{
+		"action" : "click",
+		"xpath" : "//button[@class='login-button']"
+	},
+	{
+		"action" : "assert",
+		"xpath" : "//span[text()='Incorrect Password !']",
+		"expectedValue" : "Incorrect Password !"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='username']",
+		"value" : "riyaz@rabiyat1231.fusion"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='password']",
+		"value" : "fusion"
+	},
+	{
+		"action" : "click",
+		"className" : "//button[@class='login-button']"
+	},
+	{
+		"action" : "assert",
+		"xpath" : "//span[text()='User does not Exist']",
+		"expectedValue" : "User does not Exist"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='username']",
+		"value" : "riyaz@rabiyat321.fusion"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='password']",
+		"value" : "apple123"
+	},
+	{
+		"action" : "click",
+		"xpath" : "//button[@type='submit']"
+	},
+	{
+		"action" : "assert",
+		"xpath" : "//span[text()='User does not Exist']",
+		"expectedValue" : "User does not Exist"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='username']",
+		"value" : "riyaz@rabiyat.fusion"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='password']",
+		"value" : "fusion"
+	},
+	{
+		"action" : "click",
+		"xpath" : "//button[@class='login-button']"
+	},
+	{
+		"action" : "assert",
+		"id" : "dashboard-tab",
+		"expectedValue" : "Dashboards"
+	}
+]

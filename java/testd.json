@@ -1,0 +1,22 @@
+[
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='username']",
+		"value" : "riyaz@rabiyat.fusion"
+	},
+	{
+		"action" : "input",
+		"xpath" : "//input[@formcontrolname='password']",
+		"value" : "fusion123"
+	},
+	{
+		"action" : "click",
+		"xpath" : "//button[@class='login-button']"
+	},
+	{
+		"action" : "assert",
+		"xpath" : "//span[text()='Incorrect Password !']",
+		"expectedValue" : "Incorrect Password !"
+	}
+	
+]
